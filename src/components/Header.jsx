@@ -18,7 +18,7 @@ export default function Header() {
                                 <Link to="/contato" className="nav-link">Contato</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/teste"  className="nav-link"> Teste </Link>
+                                <Link to="/teste"  className="nav-link"> Historia  </Link>
                             </li>
                         </ul>
                     </div>
