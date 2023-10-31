@@ -12,13 +12,13 @@ export default function Header() {
                     <div className="collapse navbar-collapse ms-md-auto justify-content-end" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link to="/" className="nav-link"></Link>
+                                <Link to="/login" className="nav-link">Login</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="/contato" className="nav-link">Contato</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/teste"  className="nav-link"> Historia  </Link>
+                                <Link to="/teste"  className="nav-link"> Cadastro</Link>
                             </li>
                         </ul>
                     </div>

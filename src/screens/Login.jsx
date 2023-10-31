@@ -1,5 +1,5 @@
 import "../css/style.css";
-export default function HomeScreen() {
+export default function Login() {
   return (
     <form action="">
       <fieldset>

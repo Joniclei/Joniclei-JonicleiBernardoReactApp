@@ -1,11 +1,14 @@
-import "../css/style.css"
+import "../css/style.css";
 
-export default function TesteScreen() {
+export default function CadAlunoScreen() {
   return (
     <div>
       <form action="">
+        <fieldset>
+
+
         <legend>Cadastro Aluno</legend>
-        <label for="idNome" class="espacoForms">
+        <label for="idNome" className="espacoForms">
           {" "}
           Nome:{" "}
         </label>
@@ -21,24 +24,6 @@ export default function TesteScreen() {
           required
         />
 
-        <label
-          for="idSobreNome"
-          class="
-espacoForms"
-        >
-          Sobre Nome:
-        </label>
-        <input
-          type="text"
-          id="idSobreNome"
-          name="nmSobreNome"
-          value=""
-          placeholder="Digite seu sobrenome aqui"
-          minlength="3"
-          maxlength="140"
-          autocomplete="on"
-          required
-        />
 
         <label for="idDatas">Data de Nascimento</label>
 
@@ -46,7 +31,7 @@ espacoForms"
 
         <label
           for="idEndereco"
-          class="
+          className="
           espacoForms"
         >
           Enderedo:
@@ -59,47 +44,10 @@ espacoForms"
           placeholder="Digite seu endereco"
           required
         />
-        <label
-          for="idNomeMae"
-          class="
-          espacoForms"
-        >
-          Nome da Mae:
-        </label>
-        <input
-          type="text"
-          id="idNomeMae"
-          name="nmNomeMae"
-          value=""
-          placeholder=""
-          minlength="3"
-          maxlength="140"
-          autocomplete="on"
-          required
-        />
-
-        <label
-          for="idNomePai"
-          class="
-          espacoForms"
-        >
-          Nome do Pai:
-        </label>
-        <input
-          type="text"
-          id="idNomePai"
-          name="nmNomePai"
-          value=""
-          placeholder=""
-          minlength="3"
-          maxlength="140"
-          autocomplete="on"
-          required
-        />
-
+        
         <label
           for="idEmail"
-          class="
+          className="
           espacoForms"
         >
           Email:
@@ -116,7 +64,7 @@ espacoForms"
 
         <label
           for="idTel"
-          class="
+          className="
           espacoForms"
         >
           Tel:
@@ -133,20 +81,17 @@ espacoForms"
           autocomplete="off"
         />
 
-        <label for="idSerie">Serie:</label>
-        <input type="number" name="nmSerie" id="idSerie" min="1" max="9" />
-
         <label for="idSexo">Sexo:</label>
 
         <div
-          class="
+          className="
           divSel"
         >
           <input
             type="radio"
             name="nmGenero"
             id="idFemenino"
-            class="
+            className="
               flagSel"
           />
 
@@ -154,14 +99,14 @@ espacoForms"
         </div>
 
         <div
-          class="
+          className="
           divSel"
         >
           <input
             type="radio"
             name="nmGenero"
             id="idMasculino"
-            class="
+            className="
               flagSel"
           />
           <label for="idMasculino">Masculino</label>
@@ -170,89 +115,89 @@ espacoForms"
         <label>Necessidade Especiais:</label>
 
         <div
-          class="
+          className="
           divSel"
         >
           <input
             type="checkbox"
-            class="
+            className="
             flagSel"
           />
           <label for="idAuditiva">Deficiencia Auditiva</label>
         </div>
         <div
-          class="
+          className="
           divSel"
         >
           <input
             type="checkbox"
-            class="
+            className="
             flagSel"
           />
           <label for="idMotora">Deficiencia Motora</label>
         </div>
         <div
-          class="
+          className="
           divSel"
         >
           <input
             type="checkbox"
-            class="
+            className="
             flagSel"
           />
           <label for="idVisual">Deficiencia Visual</label>
         </div>
         <div
-          class="
+          className="
           divSel"
         >
           <input
             type="checkbox"
-            class="
+            className="
             flagSel"
           />
           <label for="idCerebral">Paralesia Cerebral</label>
         </div>
         <div
-          class="
+          className="
           divSel"
         >
           <input
             type="checkbox"
-            class="
+            className="
             flagSel"
           />
           <label for="idAutista">Pertubacao do Espectro Autista</label>
         </div>
         <div
-          class="
+          className="
           divSel"
         >
           <input
             type="checkbox"
-            class="
+            className="
             flagSel"
           />
           <label for="idPsicologico">Pertubacao do Foro Psicologico</label>
         </div>
         <div
-          class="
+          className="
           divSel"
         >
           <input
             type="checkbox"
-            class="
+            className="
             flagSel"
           />
           <label for="idAprendizagem">Pertubacao de Aprendizagem</label>
         </div>
         <div
-          class="
+          className="
           divSel"
         >
           <input
             type="checkbox"
-            class="
+            className="
             flagSel"
           />
           <label for="idHabilidade">Altas Habilidades</label>
@@ -260,13 +205,13 @@ espacoForms"
 
         <div
           id="idButtonCadastroAluno"
-          class="
+          className="
           divButtonForm"
         >
           <button
             type="button"
             value="salvaCadAluno"
-            class="
+            className="
             buttonForm"
           >
             Salvar
@@ -274,12 +219,13 @@ espacoForms"
           <button
             type="reset"
             value="resetCadAluno"
-            class="
+            className="
             buttonForm"
           >
             Limpar
           </button>
         </div>
+        </fieldset>
       </form>
     </div>
   );

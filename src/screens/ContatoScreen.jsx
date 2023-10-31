@@ -73,14 +73,7 @@ export default function ContatoScreen() {
             placeholder=""
             readonly
           />
-          <select name="IdSelctMotivo" class="espacoForms" multiple>
-            <option value="elogio">Elogio</option>
-            <option value="problema">Problema com produto</option>
-            <option value="reclamacao">Reclamacao</option>
-            <option value="sugestao">Sugestao</option>
-            <option value="outro">Outro</option>
-          </select>
-
+         
           <label for="idMsg" class="espacoForms">
             Mensagem:
           </label>
